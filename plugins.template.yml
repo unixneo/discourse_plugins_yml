@@ -1,0 +1,13 @@
+hooks:
+  after_code:
+    - exec:
+        cd: $home/plugins
+        cmd:
+          - git clone https://github.com/discourse/docker_manager.git
+          - git clone https://github.com/discourse/discourse-bbcode.git
+          - git clone https://github.com/discourse/discourse-sitemap.git
+          - git clone https://github.com/discourse/discourse-solved.git
+          - git clone https://github.com/discourse/discourse-whos-online.git
+          - git clone https://github.com/unixneo/legacy-info.git
+          - git clone https://github.com/unixneo/container-names.git
+          - git clone https://github.com/discourse/discourse-checklist.git
